@@ -20,8 +20,9 @@ self.end_with?("!")
   def count_sentences
     #should use self to refer to String
     #1. split the string on all punctuation
-    complex_strings=[]
-self.split(/\s+/).length
+    #complex_strings=[]
+#self.split(/\s+/).length
+string.scan(/[^\.!?]+[\.!?]/).map(&:strip).count
 
   end
 end
